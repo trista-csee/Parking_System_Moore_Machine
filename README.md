@@ -15,15 +15,36 @@
 * The state register is also modeled using D flip-flops.
 * Normally Moore machines are described using three blocks, one of which must be a sequential and the other two can be modeled using always blocks or a combination of always and dataflow modeling constructs. 
 
-![image]()
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/three%20blocks%20Moore%20machine.png)
 
 <!-- Schmatic -->
 ## Schmatic
-![image]()
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/Schmatic_all.png)
+
+* Enlarge the left half
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/Schmatic_left.png)
+
+* Enlarge the right half
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/Schmatic_right.png)
 
 <!-- Simulation -->
 ## Simulation
-![image]()
+* The entrance sensor which is activated to detect a vehicle coming, a password is requested to open the gate. 
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/sensor_entrance_WAIT_PASSWORD.png)
+
+* If the entered password is not correct, the gate is still locked. 
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/WRONG_PASS.png)
+
+* If the entered password is correct, the gate would open to let the vehicle get in.
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/password_1_2_RIGHT_PASS.png)
+
+* If the current car is getting in the car park being detected by the exit sensor 
+and another the car comes, the door will be locked and requires the coming car to enter passwords.
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/sensor_entrance_exit_STOP.png)
+
+* If the entered password is correct, the gate would open to let the vehicle get in. Otherwise, the gate is still locked. 
+![image](https://github.com/trista-csee/Parking_System_Moore_Machine/blob/main/STOP_RIGHT_PASS.png)
+
 
 <!-- LICENSE -->
 ## License
@@ -38,7 +59,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 吳華楨 Trista Wu - trista.cs11@nycu.edu.tw
 
-Project Link: []()
+Project Link: [https://github.com/trista-csee/Parking_System_Moore_Machine](https://github.com/trista-csee/Parking_System_Moore_Machine)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
